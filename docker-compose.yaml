@@ -1,0 +1,16 @@
+---
+services:
+  ddclient:
+    image: lscr.io/linuxserver/ddclient:latest
+    container_name: ddclient-cf
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - ./config:/config
+    restart: unless-stopped
+    tmpfs:
+      - /run:exec
+      - /tmp
+    #read_only: true

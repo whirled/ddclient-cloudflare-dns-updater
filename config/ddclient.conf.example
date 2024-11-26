@@ -1,0 +1,20 @@
+# Configuration file for ddclient
+#
+# Note: The 'daemon' value determines how many seconds between checks,
+# and therefore the number of DNS queries.  Likely want this at 60+
+#
+# /config/ddclient.conf
+
+#foreground=yes
+#cache=/config/ddclient.cache # Doesn't work, image overrides via CLI
+daemon=60
+ssl=yes
+protocol=cloudflare
+ttl=60
+zone=example.com
+use=web
+web=https://ifconfig.me/ip
+login=user@example.com
+password='Cloudflare-Token-Goes-Here'
+ddns.example.com
+subdomain2.example.com
