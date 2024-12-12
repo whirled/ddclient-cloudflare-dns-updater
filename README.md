@@ -1,5 +1,7 @@
 # DDClient CloudFlare DNS Updater
 
-Updated whirlednet.net with dynamic home IP.
+Runs a Docker container with ddclient installed to keep DNS record updated with current IP.
+
+## Resource
 
 https://docs.linuxserver.io/images/docker-ddclient/
